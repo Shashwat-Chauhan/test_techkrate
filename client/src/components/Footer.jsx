@@ -81,7 +81,7 @@ export default function Footer() {
                 </a>
               </li>
 
-              <li className="text-sm text-gray-400">416, Sector 1, Vasundhara, Ghaziabad - 201012 Delhi NCR</li>
+              
             </ul>
             {/* Social Media Links */}
             <div className="flex mt-4 space-x-4">

@@ -151,4 +151,4 @@ const ServiceSection = () => {
   );
 };
 
-export default ServiceSection;
+export default ServiceSection;

@@ -2,8 +2,10 @@
 
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ArrowRight } from 'lucide-react';
+import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import Footer from "../components/Footer";
 import bgVid from "/bgVid.mp4";
 import LalitBG from "../assets/image/LalitBG.webp";
@@ -75,7 +77,8 @@ const AboutUs = () => {
           <h1 className="font-Helix text-3xl sm:text-4xl md:text-5xl font-bold mb-8 sm:mb-12 text-white">Our Charter</h1>
           <div className="space-y-6 sm:space-y-8">
             <p className="text-lg sm:text-xl md:text-2xl text-gray-200 leading-relaxed">
-              At Techkrate, we are not merely building software; we are architecting the next generation of SaaS solutions that empower businesses to thrive in a hyper-digital economy.
+              At Techkrate, we are not merely building software; we are architecting the next generation of SaaS solutions that empower businesses to
+              thrive in a hyper-digital economy.
             </p>
             <ul className="grid gap-4 sm:gap-6">
               <CharterItem
@@ -103,7 +106,7 @@ const AboutUs = () => {
           <h1 className="font-Helix text-3xl sm:text-4xl md:text-5xl font-bold mb-6 mt-16 sm:mt-32 text-white text-center">Leading Techkrate</h1>
 
           {/* Lalit Singh Chauhan */}
-          <div className="grid lg:grid-cols-2 gap-6 sm:gap-8  bg-black rounded-2xl overflow-hidden">
+          <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 bg-black rounded-2xl overflow-hidden max-h-[500px]">
             <div className="p-6 sm:p-8 lg:p-12 xl:p-16 flex flex-col justify-center">
               <h3 className="font-Helix text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-2 sm:mb-4 text-white">Lalit Singh Chauhan</h3>
               <p className="text-lg sm:text-xl text-gray-400 mb-4 sm:mb-8">Chief Executive Officer</p>
@@ -112,18 +115,23 @@ const AboutUs = () => {
                 transformative tools that enable them to navigate the digital era with confidence and clarity. This is not just about building
                 software—it&apos;s about redefining the way the world works, connects, and grows.
               </p>
-              <a href="https://www.linkedin.com/in/lalit-singh-chauhan-86b42425" target="_blank" rel="noopener noreferrer" className="group inline-flex items-center text-white hover:text-gray-300 transition-colors">
-                Read more <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
+              <a
+                href="https://www.linkedin.com/in/lalit-singh-chauhan-86b42425"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center text-white hover:text-gray-300 transition-colors mb-5"
+              >
+                <FontAwesomeIcon icon={faLinkedinIn} />
               </a>
             </div>
-            <div className="max-h-[550px]  items-center">
+            <div className="max-h-[500px] items-center">
               <img src={LalitBG || "/placeholder.svg"} alt="Lalit Singh Chauhan's portrait" className="w-full h-full object-cover" />
             </div>
           </div>
 
           {/* Utkarsh Chauhan */}
-          <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 items-stretch bg-black rounded-2xl overflow-hidden">
-            <div className="order-2 lg:order-1 max-h-[550px] flex items-center">
+          <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 items-stretch bg-black rounded-2xl overflow-hidden max-h-[500px]">
+            <div className="order-2 lg:order-1 max-h-[500px] flex items-center">
               <img src={UtkarshBG || "/placeholder.svg"} alt="Utkarsh Chauhan's portrait" className="w-full h-full object-cover" />
             </div>
             <div className="order-1 lg:order-2 p-6 sm:p-8 lg:p-12 xl:p-16 flex flex-col justify-center">
@@ -134,8 +142,13 @@ const AboutUs = () => {
                 for scalability, precision, and impact. Our commitment lies in bridging the gap between cutting-edge technology and seamless
                 execution, empowering businesses to achieve their highest potential.
               </p>
-              <a href="https://www.linkedin.com/in/utkarsh-chauhan-techkrate" target="_blank" rel="noopener noreferrer" className="group inline-flex items-center text-white hover:text-gray-300 transition-colors">
-                Read more <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
+              <a
+                href="https://www.linkedin.com/in/utkarsh-chauhan-techkrate"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center text-white hover:text-gray-300 transition-colors"
+              >
+                <FontAwesomeIcon icon={faLinkedinIn} />
               </a>
             </div>
           </div>
@@ -146,5 +159,4 @@ const AboutUs = () => {
     </div>
   );
 };
-export default AboutUs;
-
+export default AboutUs;
