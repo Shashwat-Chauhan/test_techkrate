@@ -122,7 +122,7 @@ const AboutUs = () => {
                 className="group inline-flex items-center text-white hover:text-gray-300 transition-colors mb-5"
               >
                 <FontAwesomeIcon icon={faLinkedinIn} />
-              </a>
+                </a>
             </div>
             <div className="max-h-[500px] items-center">
               <img src={LalitBG || "/placeholder.svg"} alt="Lalit Singh Chauhan's portrait" className="w-full h-full object-cover" />
