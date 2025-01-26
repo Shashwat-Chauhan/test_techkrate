@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Helix';
+    src: url('./assets/fonts/Hellix-SemiBold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Neue';
+    src: url('./assets/fonts/NeueHaasGroteskDisplay-Reg.woff2') format('woff2'),
+    url('./assets/fonts/NeueHaasGroteskDisplay-Medium.woff2') format('woff2'),
+    url('./assets/fonts/NeueHaasGroteskDisplay-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+/*   
+  body {
+    font-family: 'Helix', sans-serif;
+  } */
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  /* Webkit browsers (Chrome, Safari, Edge) */
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+
+  
