@@ -42,16 +42,16 @@ export default function ThirdSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative flex flex-col justify-between bg-black text-white min-h-screen overflow-hidden py-16 px-4 sm:px-6 lg:px-8"
+      className="relative flex flex-col justify-between bg-black text-white h-screen overflow-hidden"
     >
       <div ref={decorationRef} className="absolute inset-0 overflow-hidden pointer-events-none">
         <Circle className="absolute top-0 left-0 w-96 h-96 text-white opacity-0 -translate-x-1/2 -translate-y-1/2" />
         <Circle className="absolute bottom-0 right-0 w-[40rem] h-[40rem] text-white opacity-0 translate-x-1/4 translate-y-1/4" />
       </div>
 
-      <div ref={contentRef} className="relative z-10 max-w-4xl mx-auto mt-8 mb-16 text-center">
+      <div ref={contentRef} className="relative z-10 max-w-4xl mx-auto mt-8 mb-8 text-center">
         <h2 className="font-Helix text-6xl sm:text-7xl md:text-8xl font-bold mb-8 leading-tight tracking-tight">About Us</h2>
-        <p className="text-lg sm:text-xl md:text-2xl mb-12 text-gray-300 leading-relaxed">
+        <p className="text-lg sm:text-xl md:text-2xl mb-6 text-gray-300 leading-relaxed">
           Techkrate is a SaaS and software development company. Our mission is to craft software solutions that simplify and enhance business
           operations worldwide.
         </p>
@@ -68,7 +68,7 @@ export default function ThirdSection() {
         <img
           src={BGImage || "/placeholder.svg"}
           alt="Techkrate workspace"
-          className="w-full rounded-2xl shadow-2xl object-cover object-center max-h-[60vh] mx-auto"
+          className="w-full rounded-2xl shadow-2xl object-cover object-center max-h-[50vh]"
         />
       </div>
     </section>

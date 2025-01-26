@@ -104,7 +104,7 @@ const ServiceSection = () => {
       tl.to(
         card,
         {
-          scale: 1.05,
+          scale: 1,
           duration: 0.3,
           ease: "power2.out",
         },
@@ -117,7 +117,7 @@ const ServiceSection = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="bg-black text-white py-16 sm:py-24 overflow-hidden">
+    <section ref={sectionRef} className="bg-black text-white py-16 sm:py-24 overflow-hidden min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <h2 ref={titleRef} className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 sm:mb-16 text-center">
           Elevate Your Operations
@@ -151,5 +151,4 @@ const ServiceSection = () => {
   );
 };
 
-export default ServiceSection;
-
+export default ServiceSection;

@@ -49,7 +49,7 @@ function Contact() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white flex flex-col">
-      <div className="flex-grow mt-12 flex flex-col lg:flex-row justify-center items-center px-4 sm:px-6 md:px-8 lg:px-16 pt-28 pb-10 md:py-16 space-y-8 lg:space-y-0 lg:space-x-12">
+      <div className="flex-grow mt-16 flex flex-col lg:flex-row justify-center items-center px-4 sm:px-6 md:px-8 lg:px-16 pt-28 pb-10 md:py-16 space-y-8 lg:space-y-0 lg:space-x-12">
         {/* Contact Info Section */}
         <div className="bg-gradient-to-br from-blue-900 to-blue-700 text-white px-6 py-8 sm:px-8 sm:py-10 rounded-2xl w-full lg:w-1/2 max-w-lg shadow-2xl">
           <h2 ref={titleRef} className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8 text-blue-100">
