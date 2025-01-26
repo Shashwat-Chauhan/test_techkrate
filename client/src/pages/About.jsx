@@ -119,7 +119,7 @@ const AboutUs = () => {
                 href="https://www.linkedin.com/in/lalit-singh-chauhan-86b42425"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group inline-flex items-center text-white hover:text-gray-300 transition-colors mb-5"
+                className="group inline-flex items-center text-white hover:text-gray-300 transition-colors"
               >
                 <FontAwesomeIcon icon={faLinkedinIn} />
                 </a>
